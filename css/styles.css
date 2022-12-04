@@ -1,0 +1,58 @@
+body {
+    background: #000428;  /* fallback for old browsers */
+background-color: white;
+
+}
+.contenido {
+    padding:20px;
+}
+.contenido-principal {
+    
+    width:300px;
+	padding:30px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+}
+.presupuesto p{
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.presupuesto p span {
+    font-weight: normal;
+}
+#gastos {
+    margin-bottom: 40px;
+   
+
+}
+form{
+	width:300px;
+	padding:30px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+}
+form input[type="text"],
+form input[type="text"]{
+	width:190px;
+	padding:3px 10px;
+	border:30px solid #f6f6f6;
+	border-radius:30px;
+	background-color:#f6f6f6;
+	margin:10px 0;
+	display:inline-block;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color: black;
+    text-align: center;
+}
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color:black;
+    font-size: 22px;
+    margin-bottom:30px;
+}
