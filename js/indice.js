@@ -10,6 +10,11 @@ function eventListeners(){
     formulario.addEventListener('submit', agregarGasto);
 }
 
+
+function generateID() {
+    return Math.floor(Math.random() * 100000000);
+}
+
 // clases
 class Presupuesto {
     constructor(presupuesto){
@@ -108,7 +113,7 @@ class UI {
         const {presupuesto, restante} = presupuestObj;
         const restanteDiv = document.querySelector('.restante€');
 
-        // comprobar 25%
+        
         if((presupuesto / 4) > restante){   
             restanteDiv.classList.remove('alert-success','alert-warning');
             restanteDiv.classList.add('alert-danger');
@@ -125,6 +130,10 @@ class UI {
 
             formulario.querySelector('button[type="submit"]').disabled = true;
         }        
+
+        if(restante >=agregar-gasto) {
+            ui.imprimirAlerta('El Presupuesto ha aumentado', 'tienes mas dinero');
+        }
     }
 }
 const ui = new UI();
